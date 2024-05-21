@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <title>RoutifyApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="index.css">
+  <script type="module" src="register.js" defer></script>
+  <script type="module" src="login.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h2 class="logo">Routify</h2>
+    <nav class="navigation">
+      <a href="#">Inicio</a>
+      <a href="https://www.anahuac.mx/cancun/" target="_blank">Sobre nosotros</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
+
+
+  <div class="container-main">
+    <!-- <div class="container-left">
+      <div class="title">
+      <h3>Rutas</h3>
+      </div>
+      <div class="text">
+      <p>R1 Corales</p>
+      <div class="list">
+      <ul>
+        <li>Universidad del Caribe</li>
+        <li>Corales</li>
+        <li>Av. 20 de Noviembre</li>
+        <li>Av. Revolución</li>
+        <li>Av. Bonampak</li>
+        <li>Av. Tulum</li>
+        <li>Zona Hotelera</li>
+        <li>Westin Regina</li>
+      </ul>
+      </div>
+      </div>
+    </div> -->
+  
+    <div class="container-left">
+      <div class="title">
+        <h3 class="text">── Ubica tu ruta</h3>
+      </div>
+    
+      <div class="where">
+        <p>¿A dónde vamos?</p>
+      </div>
+      <div class="input">
+        <input placeholder="Escoge un punto de partida" type="text">
+        <input placeholder="Escoge un destino" type="text">
+      </div>
+
+      <div class="submit">
+      <a class="link" href="https://www.anahuac.mx/cancun/" target="_blank">Buscar</a>
+      </div>
+    </div>
+  
+    <div class="container-right">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.949622036615!2d-86.84638460943854!3d21.062196305890314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e81de50fe2ad5%3A0x258582dbd189eca2!2sUniversidad%20An%C3%A1huac%20Canc%C3%BAn!5e0!3m2!1sen!2smx!4v1711077866221!5m2!1sen!2smx" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    </div>
+  </body>
+
+
+
+  <div class="wrapper">
+    <span class="icon-close"><ion-icon name="close-circle"></ion-icon></span>
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" id="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" id="password" required>
+          <label>Contraseña</label>
+        </div>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox">Recuérdame</label>
+          <a href="#">Olvidaste tu contraseña?</a>
+        </div>
+        <button id="submit" type="submit" class="btn">Login</button>
+
+        <div class="login-register">
+          <p>No tienes cuenta?&nbsp;<a href="#" class="register-link">Regístrate</a></p>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-box register">
+      <h2>Registro</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" id="user" required>
+          <label>Usuario</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" id="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" id="password" required>
+          <label>Contraseña</label>
+        </div>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox">Acepto los términos y condiciones</label>
+        </div>
+        <button id="submit" type="submit" class="btn">Registrarse</button>
+
+        <div class="login-register">
+          <p>Ya tienes cuenta?&nbsp;<a href="#" class="login-link">Inicia sesión</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <script src="index.js" type="text/javascript"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
